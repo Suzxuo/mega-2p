@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="ver">
+        <button class="close"></button>
+        <h1 class="ver_title">Введите код подтверждения </h1>
+        <p class="ver_subtitle">На ваш номер отправлен SMS<br>с персональным кодом</p>
+        <form>
+            <div class="ver-code2">
+                <input class="ver_in" type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;" placeholder="0">
+                <input class="ver_in" type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;" placeholder="0">
+                <input class="ver_in" type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;" placeholder="0">
+                <input class="ver_in" type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;" placeholder="0">
+            </div>
+            <!-- <div class="red-code">
+                <p>Неверный код </p>
+            </div> -->
+            <button type="button" class="next" href="#" onclick="location.reload(); return false;">Далее</button>
+        </form>
+    </section>
+</body>
+</html>
